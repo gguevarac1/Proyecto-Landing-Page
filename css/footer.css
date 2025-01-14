@@ -1,0 +1,175 @@
+@import 'styles.css'; 
+
+/* FOOTER */
+footer {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin-top: 15%;
+    color: white; /* Se aplica el color blanco para todo el footer */
+    vertical-align: bottom;
+
+    .footerflotante {
+        height: 300px;
+        width: 85%;
+        margin: auto; /* aplica el mismo margen de ambos lados  */
+        background-color: #26282B;
+        transform: translateY(-50%); /* mueve hacia arriba el 50%  */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        
+        .footertxt {
+            font-size: 50px;
+            justify-self: center;
+            padding-left: 20px;
+            span {
+                color: #DF991B;
+                font-size: 40px;    
+            }
+        }
+
+        .footerform {
+            font-size: 25px;
+            display: grid;
+            gap: 15px;
+            padding-right: 15%;
+            padding-left: 15%;
+            font-family: 'Brandon';
+
+            p {
+                margin-left: 20px;      
+            }
+
+            input {
+                border: solid 1px #7E7E7E;
+                border-radius: 100px;
+                color: #7E7E7E;
+                background-color: transparent;
+                padding: 10px 20px;
+                
+
+            }
+
+            button {
+                border: solid 1px #DF991B;
+                border-radius: 100px;
+                color: #DF991B;
+                background-color: transparent;
+                padding: 10px 20px;
+                width: 60%;
+                justify-self: end;
+            }
+
+        }
+    }
+    .footerFondo {
+        color: white;
+        font-size: 20px;
+        display: grid;
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+        font-family: 'Brandon';
+
+
+        .copyright {
+            border-top: solid 2px white;
+            p {
+                margin: 20px;
+                text-align: center;
+            }
+        }
+
+        .enlaces {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            ul{
+                li{
+                    list-style: none;
+                }
+            }
+            .primera {
+                align-self: self-end;
+            }
+            .segunda {
+                justify-self: center;
+            }
+            .tercera {
+                #contactanos {
+                    margin-top: 20px ;
+                    align-self: self-end;
+                }
+            }
+            .media {
+                justify-self: center;
+            }
+            .cuarta {
+                text-align: right;
+                align-self: self-end;
+                #call {
+                    font-family: 'Regal';
+                }
+                #numero {
+                    font-size: 30px;
+                    font-family: 'Regal Black';
+                }
+                #mail {
+                    margin-top: 20px ;
+                    align-self: self-end;
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width:1000px) {
+
+    footer {
+
+        .footerflotante{
+            display: none;
+        }
+
+        .footerFondo {
+            
+            .enlaces {
+                grid-template-columns: repeat(2,1fr);
+                
+                .primera {
+                    margin-top: 30px;
+                    justify-self: baseline;
+                    grid-column: span 2;
+                }
+                .media {
+                    margin-top: 50px;
+                    justify-self: baseline;
+                }
+                .tercera{
+                    #contactanos {
+                        margin-top: 0px ;
+                    }
+                }
+                .cuarta {
+                    justify-self: baseline;
+                    text-align: left;
+                    margin-top: 80px;
+                    margin-bottom: 30px;
+                    grid-column: span 2;
+                    #call {
+                        display: none;
+                    }
+                }
+            }
+
+            .copyright {
+                display: none;
+            }
+        }
+
+    }
+    
+}

@@ -1,0 +1,44 @@
+/* ESTA ES MI HOJA DE ESTILO PRINCIPAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES */
+@font-face {
+    font-family: 'Regal';
+    src: url('../fuentes/regal-display-pro/PFRegalDisplayPro-Regular.ttf');
+}
+@font-face {
+    font-family: 'Regal Black';
+    src: url('../fuentes/regal-display-pro/PFRegalDisplayPro-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url('../fuentes/brandon-grotesque/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf');
+}
+
+@font-face {
+    font-family: 'Brandon light';
+    src: url('../fuentes/brandon-grotesque/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf');
+}
+
+
+/* TITULOS */
+.title-naranja {
+    color: #DF991B;
+    font-size: 30px;
+}
+
+.title-negro {
+    font-size: 60px;
+}
+
+@media (max-width:1000px) {
+    .ocultarmovil {
+        display: none;
+    }
+}
+    

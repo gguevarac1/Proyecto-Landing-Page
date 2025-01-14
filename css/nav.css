@@ -1,0 +1,96 @@
+@import 'styles.css'; 
+
+
+/* Ubicación del logo */
+#logo {
+    margin-left: 122px;
+}
+
+#logomobil {
+    display: none;
+    border: solid 1px white;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+
+
+/* Estilo del nav bar */
+nav {
+    z-index: 10; 
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.344);
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-family: 'Brandon';
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 25px;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .grey {
+            color: grey;
+        }
+        .registro {
+            display: grid;
+            grid-template-columns: 1fr 1px 1fr;
+            align-items: center;
+            a {
+                justify-self: center;
+            }
+            #barra {
+                height: 100%;
+                width: 1px;
+                background-color: white;
+            }
+        }
+        .idiomas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            img {
+                margin-right: 30px;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:1000px) {
+
+    #logo {
+        display: none;
+    }
+    #logomobil {
+        display: inline;
+        margin-left: 30px;
+    }
+
+    nav {   
+        .links {
+            grid-template-columns: 1fr;
+            .registro {
+                display: none;
+            }
+            .idiomas {
+                grid-template-columns: 1fr;
+                justify-items: end;
+
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+}
