@@ -17,7 +17,7 @@
     height: 100%;
 }
 
-#izquierda img {
+.imagenes {
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -31,7 +31,6 @@
     grid-column: span 2;
 }
 
-
 .imgcontxt {
     grid-column: span 5;
 }
@@ -43,16 +42,28 @@
 }
 
 #txttercera {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 25px;
     background-color: white;
     width: 100%;
 }
+    
+#imgcastillotexto {
+    display: flex;
+}
+
+#imgcastillo {
+    width: 50px !important;
+}
+
 
 #france {
+    padding-left: 10px;
     color: #464547;
-    font-size: 20px;
+    font-size: 25px;
+    align-self: center; 
 }
+
 #mar {
     font-size: 30px;
 }
@@ -69,7 +80,13 @@
 #botones { 
     align-self: end;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+#imgprev {
+    justify-self: end;
+}
+.imgdir {
+    align-self: center; 
 }
 
 
